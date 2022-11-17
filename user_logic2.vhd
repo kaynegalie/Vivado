@@ -1,4 +1,4 @@
-entity user_logic is
+entity user_logic2 is
  PORT (
     ck : IN STD_LOGIC;
     resetn : IN STD_LOGIC;
@@ -8,4 +8,4 @@ entity user_logic is
     o_tvalid : OUT STD_LOGIC;
     yx_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
-end user_logic;
+end user_logic2;
