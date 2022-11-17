@@ -29,14 +29,14 @@ COMPONENT cordic_0
   );
 END COMPONENT;
 begin
-U : div_gen_0
+U : cordic_0
   PORT MAP (
     aclk => ck,
-    s_axis_cartesian_tvalid => in_tvalid,
-    s_axis_cartesian_tdata => y,
-    s_axis_phase_tvalid => in_tvalid,
-    s_axis_phase_tdata => x,
-    m_axis_dout_tvalid => out_tvalid,
+    s_axis_cartesian_tvalid => i_tvalid,
+    s_axis_cartesian_tdata => yx_in,
+    s_axis_phase_tvalid => i_tvalid,
+    s_axis_phase_tdata => theta,
+    m_axis_dout_tvalid => o_tvalid,
     m_axis_dout_tdata => yx_out
   );
  
